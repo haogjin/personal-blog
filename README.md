@@ -25,7 +25,7 @@ https://www.jianshu.com/p/11dd7d8dbae2
 2、管理员：登陆后可以对个人信息、文章、菜单进行增删改查操作
 3、写文章添加修改文件（如图片）的时候涉及文件上传，采用的是nginx服务器，配置文件路径：
 nginx目录/files/images，nginx.conf文件代码：
-```
+``` bash
 #user  nobody;
 worker_processes  1;
 
