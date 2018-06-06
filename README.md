@@ -3,7 +3,6 @@
 > vue.js blog project with node.js
 
 >
-## Build Setup
 
 ``` bash
 1、运行数据库文件myblog.sql
