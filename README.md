@@ -2,6 +2,9 @@
 
 vue.js+iview+node.js+espress+mysql
 
+#### 效果查看
+https://www.jianshu.com/p/11dd7d8dbae2
+
 #### 运行步骤
 
 ``` bash
