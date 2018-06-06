@@ -1,8 +1,8 @@
-## 技术
+#### 技术
 
-> vue.js+iview+node.js+espress+mysql
+vue.js+iview+node.js+espress+mysql
 
-## 运行步骤
+#### 运行步骤
 
 ``` bash
 1、运行数据库文件myblog.sql
