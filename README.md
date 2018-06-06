@@ -23,8 +23,7 @@ https://www.jianshu.com/p/11dd7d8dbae2
 ``` bash
 1、用户：提供查看和搜索权限
 2、管理员：登陆后可以对个人信息、文章、菜单进行增删改查操作
-注：
-1、动态菜单管理模块是根据自己订的规则进行添加修改的
-2、访问量和文章数的获取后续进行添加
+3、动态菜单管理模块是根据自己订的规则进行添加修改的
+4、访问量和文章数的获取后续进行添加
 ```
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
