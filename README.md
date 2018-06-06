@@ -42,18 +42,18 @@ server {
     index  index.html index.htm;
     }
 
-       #映射图片访问url
-      location /image/ {
-          expires 30d;#缓存时间
-          root   D:/nginx/nginx-1.6.3/files/images;
-      }
-      location ~ .*\.(gif|jpg|jpeg|png|bmp|swf|woff|ttf|eot|svg)$ {
-         expires 1y;
-      }
+     #映射图片访问url
+    location /image/ {
+        expires 30d;#缓存时间
+        root   D:/nginx/nginx-1.6.3/files/images;
+    }
+    location ~ .*\.(gif|jpg|jpeg|png|bmp|swf|woff|ttf|eot|svg)$ {
+       expires 1y;
+    }
 
-      location ~ .*\.(js|css)$ {
-        expires 1y;
-      }
+    location ~ .*\.(js|css)$ {
+      expires 1y;
+    }
   }
 
 ```
