@@ -1,0 +1,66 @@
+/*
+!*
+字体处理 仍然用px来写，不过需要针对不同的缩放比例写不用的大小，
+比如安卓下，字体大小为14px,那么iphone6下大小应为28px，Iphone6s应为42px。
+flexible.js会根据屏幕缩放比给html添加data-dpr属性，因此可以通过scss编写mixin来处理字体
+调用：@include fz(16px)
+*!
+@mixin fz($font-size) {
+  font-size: $font-size;!*no*!
+  [data-dpr="2"] & {
+    font-size: $font-size * 2;
+  }
+  [data-dpr="3"] & {
+    font-size: $font-size * 3;
+  }
+}
+
+!*
+单行文本溢出和多行文本溢出
+*!
+@mixin t-overflow($line:1) {
+  @if $line==1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  @else {
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+!*
+垂直居中
+*!
+@mixin table-center {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+@mixin poa-center($w, $h) {
+  position: absolute;
+  width: $w;
+  height: $h;
+  left: 50%;
+  top: 50%;
+  // margin-left:-($w/2);
+  // margin-top:-($h/2);
+  transition: translate(-50%, -50%)
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+}
+.center{text-align: center; }
+*/

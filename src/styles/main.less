@@ -1,0 +1,134 @@
+@import "./common/header.less";
+
+/* 整体内容宽度*/
+@media (min-width:1100px) {
+    .content-wrap {
+      width: 80%;
+      left: 10%;
+    }
+    .main-header-con {
+      width: 80%;
+    }
+}
+@media (max-width:1100px) {
+    .content-wrap {
+      width: 100%;
+      left: 0;
+    }
+    .main-header-con {
+      width: 100%;
+    }
+}
+/* 菜单收缩*/
+@media (max-width:700px) {
+  .sidebar-menu-con {
+    width:60px;
+    overflow:visible;
+  }
+  .single-page-con{
+    left:60px;
+  }
+  .main-header-con{
+    padding-left: 60px;
+  }
+  .single-page-con {
+    margin: 135px 0 70px 60px;
+  }
+}
+/* 菜单展开*/
+@media (min-width:700px) {
+  .sidebar-menu-con {
+    width:200px;
+    overflow:auto;
+  }
+  .single-page-con{
+    left:200px;
+  }
+  .main-header-con{
+    padding-left: 200px;
+  }
+  .single-page-con {
+    margin: 135px 0 70px 200px;
+  }
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  .content-wrap {
+    position: absolute;
+    top: 0;
+  }
+  .sidebar-menu-con {
+    height: calc(100% - 150px);
+    position: fixed;
+    top: 75px;
+    overflow-y: auto;
+    z-index: 21;
+    transition: width .3s;
+  }
+  &-header-con {
+    box-sizing: border-box;
+    position: fixed;
+    display: block;
+    top: 75px;
+   /* padding-left: 200px;*/
+    height: 60px;
+    z-index: 20;
+    /*  box-shadow: 0 2px 1px 1px rgba(100,100,100,.1);*/
+    transition: padding .3s;
+  }
+  .layout-text {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+  }
+  .main-hide-text .layout-text {
+    display: none;
+  }
+  &-breadcrumb {
+    padding: 8px 15px 0;
+  }
+  &-header {
+    height: 60px;
+    background: #fff;
+    box-shadow: 0 0.1px 0.4px 0.4px rgba(100, 100, 100, .1);
+    position: relative;
+    z-index: 11;
+    .navicon-con {
+      margin: 15px 20px;
+      display: inline-block;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .header-middle-con {
+      position: absolute;
+      left: 60px;
+      top: 0;
+      bottom: 0;
+      padding: 10px;
+      overflow: hidden;
+    }
+  }
+  .single-page-con {
+  /*  margin: 135px 0 70px 200px;*/
+    z-index: 1;
+    overflow: auto;
+    background-color: #F7F6F6;
+    transition: left .3s;
+    .single-page {
+      margin: 10px;
+      overflow-x: auto;
+    }
+  }
+  .footer-wrap {
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+  }
+}
+

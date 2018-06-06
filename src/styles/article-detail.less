@@ -1,0 +1,29 @@
+.content-wrap {
+  position: relative;
+ /* width: 70%;*/
+  top: 70px;
+/*  left: 15%;*/
+  height:100%;
+  background-color:#ffffff;
+
+  .editor-content{
+    z-index:10;
+    min-height:700px;
+  }
+  .detail-article-title{
+    font-size:24px;
+  }
+}
+
+@media (min-width:1100px) {
+  .content-wrap {
+    width: 70%;
+    left: 15%;
+  }
+}
+@media (max-width:1100px) {
+  .content-wrap {
+    width: 100%;
+    left: 0;
+  }
+}

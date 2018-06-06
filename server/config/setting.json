@@ -1,0 +1,6 @@
+{
+  "image_url":"http://localhost:8080/",
+  "image_dir":"D:/nginx/nginx-1.6.3/files/images",
+  "tmp_dir":"D:/nginx/nginx-1.6.3/temp/images"
+}
+

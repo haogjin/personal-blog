@@ -1,0 +1,122 @@
+.wrap-header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  background-color: #FFFFFF;
+  box-shadow: 0 12px 0.1px 0.1px #F7F6F6;
+  .user {
+   /* width: 25%;
+    font-size: 32px;*/
+    color: #5BB0EE;
+    font-weight: 100;
+    text-align: center;
+  }
+  .search {
+  /*  width: 50%;*/
+    display: flex;
+    .search-text {
+    /*  width: 60%;*/
+      margin-right: 20px;
+    }
+    .search-bth {
+     /* width: 20%;*/
+    }
+  }
+  .write-article {
+    text-align: right;
+  /*  width: 15%;*/
+  }
+  .user-logout {
+   /* width: 10%;*/
+    display: inline-block;
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 5%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+/* 大于800px */
+@media (min-width:800px) {
+  .user {
+    width: 25%;
+    font-size: 32px;
+  }
+  .search {
+    width: 40%;
+    .search-text {
+      width: 60%;
+      margin-right: 20px;
+    }
+    .search-bth {
+      width: 20%;
+    }
+  }
+  .write-article {
+    width: 20%;
+  }
+  .user-logout {
+    width: 15%;
+  }
+}
+/* 小于800px */
+@media (max-width:800px) {
+  .ivu-layout-header {
+    padding: 0;
+  }
+  .user {
+    width: 15%;
+    font-size: 24px;
+  }
+  .search {
+    width: 45%;
+    .search-text {
+      width: 60%;
+      margin-right: 20px;
+    }
+    .search-bth {
+      width: 20%;
+    }
+  }
+  .write-article {
+    width: 15%;
+  }
+  .user-logout {
+    width: 25%;
+  }
+}
+
+/* 小于800px */
+@media (max-width:580px) {
+  .ivu-layout-header {
+    padding: 0;
+  }
+  .user {
+    width: 15%;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .search {
+    width: 65%;
+    margin-left: 10px;
+    .search-text {
+      width: 80%;
+     /* margin-right: 20px;*/
+    }
+  /*  .search-bth {
+      width: 20%;
+    }*/
+  }
+  .write-article {
+    display:none;
+  }
+  .btn-margin{
+    margin-left:5px;
+  }
+  .user-logout {
+    width: 20%;
+  }
+}
