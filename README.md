@@ -8,7 +8,7 @@ https://www.jianshu.com/p/11dd7d8dbae2
 #### 运行步骤
 
 ``` bash
-1、运行数据库文件myblog.sql
+1、运行数据库文件myblog.sql，数据库连接设置路径server/db/db.js
 
 2、下载依赖：npm install
 
