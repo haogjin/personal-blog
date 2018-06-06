@@ -2,20 +2,20 @@
 
 > vue.js blog project with node.js
 
+>
 ## Build Setup
 
 ``` bash
-# install dependencies
-npm install
+1、运行数据库文件myblog.sql
 
-# serve with hot reload at localhost:8080
-npm run dev
+2、下载依赖：npm install
 
-# build for production with minification
-npm run build
+3、进入server文件夹目录运行node：node app
 
-# build for production and view the bundle analyzer report
-npm run build --report
+4、直接运行会进入用户查看界面：npm run dev
+
+5、管理员界面入口：/login
+   账号：Aimee   密码：111111
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
